@@ -1,11 +1,24 @@
 <html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
 	<body>
-		<h1>Rock, Paper, Scissors!</h1>
-		<button id="rock_button" name="rock" onclick=playGame('rock')>Rock</button>
-		<button id="paper_button" name="paper" onclick=playGame('paper')>Paper</button>
-		<button id="scissors_button" name="scissors" onclick=playGame('scissors')>Scissors</button>
-		<p>Their Choice:<div id="ai_choice">...</div></p>
-		<p>Result:<div id="game_result">...</div></p>
+		<div class="container">
+			<div class="row">
+				<h1>Rock, Paper, Scissors!</h1>
+			</div>
+			<div class="row">
+				<button type="button" class="btn btn-primary" id="rock_button" name="rock" onclick=playGame('rock')>Rock</button>
+				<button type="button" class="btn btn-primary" id="paper_button" name="paper" onclick=playGame('paper')>Paper</button>
+				<button type="button" class="btn btn-primary" id="scissors_button" name="scissors" onclick=playGame('scissors')>Scissors</button>
+			</div>
+			<div class="row">
+				<p>Their Choice:<div id="ai_choice">...</div></p>
+			</div>
+			<div class="row">
+				<p>Result:<div id="game_result">...</div></p>
+			</div>
+		</div>	
 		<script>
 			function playGame(playerChoice) {
 				// Pick a random RPS choice.
